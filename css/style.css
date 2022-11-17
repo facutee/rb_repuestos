@@ -359,9 +359,10 @@ margin-left: 25%;
     justify-content:center;
     align-self: center;
 }
-#rblogo {
-    max-height: 100%;
-} 
+/* NOSOTROS */
+.nosotros__imglocal { 
+    height: 80%;
+}
 
 /* NAV */
 body {
@@ -392,6 +393,11 @@ body {
     justify-content: center;
     font-size: x-small;
 }
+/* NOSOTROS */
+.nosotros__imglocal { 
+    height: 60%;
+}
+
 }
 
 @media screen and (max-width: 320px) {
