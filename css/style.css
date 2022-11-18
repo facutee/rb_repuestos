@@ -142,16 +142,20 @@ nav li a:hover {
     align-self: center;
     /* margin-left: 25%; */
 }
+
 #main__ubicacion__contenedor {
     display: flex;
     justify-content: center;
 }
-#mapa-google-chico{
+
+#mapa-google-chico {
     display: none;
 }
+
 #mapa-google-extrachico {
     display: none;
 }
+
 /* INDEX */
 #index {
     overflow-y: visible;
@@ -259,23 +263,27 @@ nav li a:hover {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "p_texto p_map p_map"
-    "p_img p_map p_map";
+        "p_texto p_map p_map"
+        "p_img p_map p_map";
     align-items: center;
     justify-content: space-around;
 }
+
 #presup__main__txt {
     padding-left: 5%;
     grid-area: p_texto;
     margin: 2%;
 }
+
 #presup__main__txt h3 {
     font-weight: 800;
 }
+
 #presup__main__txt h4 {
     line-height: 120%;
     text-align: justify;
 }
+
 #presup__main__map {
     grid-area: p_map;
     display: flex;
@@ -284,15 +292,48 @@ nav li a:hover {
     /* padding: 1%; */
     /* margin: 2%; */
 }
+
 #presup__main__img {
     padding-left: 5%;
     grid-area: p_img;
     width: 100%;
 
 }
+
 #contenedor__mapa__presup {
     height: 60%;
     width: 60%;
+}
+
+/* CONTACTO */
+/* #main-contacto {
+    justify-content: center;
+}
+#formulario {
+    margin: 2%;
+}
+#div-formulario-interno {
+    margin: 2%;
+} */
+
+#formulario {
+    display: inline-block;
+    width: 30%;
+    height: 80%;
+    padding: 1%;
+    border-width: 5px;
+    border-style: double;
+    margin-left: 35%;
+    margin-top: 2%;
+    line-height: 190%;
+    font-weight: 400;
+}
+#formulario div input {
+    height: 30px;
+}
+#formulario div button {
+    width: 15%;
+    margin-left: 20%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -362,6 +403,8 @@ nav li a:hover {
         align-items: center;
         justify-content: center;
     }
+    /* CONTACTO */
+
 }
 
 @media screen and (max-width: 768px) {
@@ -453,35 +496,46 @@ nav li a:hover {
         justify-content: center;
         font-size: small;
     }
+
     /* PRESUPUETO */
     #presup__main {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        "p_texto p_img"
-        "p_map p_map";
+            "p_texto p_img"
+            "p_map p_map";
         align-items: center;
         justify-content: space-around;
     }
+
     #presup__main__img {
         padding-left: 5%;
         grid-area: p_img;
         width: 70%;
     }
+
     #contenedor__mapa__presup {
         height: 40%;
         width: 40%;
     }
+
     /* UBICACION */
     #mapa-google-chico {
         display: block;
     }
+
     #mapa-google-grande {
         display: none;
     }
+
     #mapa-google-extrachico {
         display: none;
+    }
+    /* CONTACTO */
+    #formulario {
+        height: 90%;
+        margin-left: 15%;
     }
 }
 
@@ -551,27 +605,41 @@ nav li a:hover {
     body {
         grid-template-rows: 0.5fr 0.18fr 2fr 0.20fr;
     }
+
     /* PRESUPUESTO */
     #presup__main {
         display: flex;
         flex-direction: column;
     }
+
     #contenedor__mapa__presup {
         height: 100%;
         width: 90%;
     }
+
     #presup__main__txt {
         flex-basis: 40%;
     }
+
     #presup__main__map {
         flex-basis: 60%;
     }
+
     #presup__main__img {
         flex-basis: 20%;
         padding-left: 5%;
         grid-area: p_img;
         width: 50%;
-    
+
+    }
+    /* CONTACTO */
+    #formulario {
+        display: inline-block;
+        width: 20%;
+        height: 80%;
+        margin: 5%;
+        line-height: 200%;
+        font-weight: 400;
     }
 }
 
@@ -612,22 +680,36 @@ nav li a:hover {
     .nosotros__imglocal {
         height: 60%;
     }
-/* PRESUPUESTO */
-#presup__main__txt {
-   font-size: small;
-   font-weight: 400;
-   padding: 0;
-}
-/* UBICACION */
-#mapa-google-chico{
-    display: none;
-}
-#mapa-google-extrachico {
-    display: block;
-}
-#mapa-google-grande {
-    display: none;
-}
+
+    /* PRESUPUESTO */
+    #presup__main__txt {
+        font-size: small;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    /* UBICACION */
+    #mapa-google-chico {
+        display: none;
+    }
+
+    #mapa-google-extrachico {
+        display: block;
+    }
+
+    #mapa-google-grande {
+        display: none;
+    }
+    /* CONTACTO */
+    #formulario {
+        display: inline-block;
+        width: 20%;
+        height: 80%;
+        margin: 5%;
+        line-height: 100%;
+        font-weight: 300;
+        font-size: xx-small;
+    }
 }
 
 @media screen and (max-width: 320px) {
