@@ -1,0 +1,32 @@
+/* CONTACTO */
+/* #main-contacto {
+    justify-content: center;
+}
+#formulario {
+    margin: 2%;
+}
+#div-formulario-interno {
+    margin: 2%;
+} */
+
+#formulario {
+    display: inline-block;
+    width: 30%;
+    height: 80%;
+    padding: 1%;
+    border-width: 5px;
+    border-style: double;
+    margin-left: 35%;
+    margin-top: 2%;
+    line-height: 190%;
+    font-weight: 400;
+    div{
+        input {
+            height: 30px;
+        }
+        button {
+            width: 15%;
+            margin-left: 20%;
+        }        
+    }
+}

@@ -1,0 +1,435 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden
+}
+@import "./partes-generales/body";
+@import "./partes-generales/header";
+@import "./partes-generales/main";
+@import "./partes-generales/nav";
+@import "./partes-generales/footer";
+@import "./paginas/index";
+@import "./paginas/contacto";
+@import "./paginas/presup";
+@import "./paginas/nosotros";
+@import "./paginas/ubicacion";
+
+@media screen and (max-width: 1200px) {
+    #section2__nosotros {
+        text-align: justify;
+        line-height: 120%;
+        font-size: small;
+    }
+
+    .nosotros__imglocal {
+        padding: 3%;
+        grid-area: nosotros__imglocal;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+    }
+
+    /* INDEX */
+    .main__marcas {
+        font-size: small;
+    }
+
+    .main__pagos {
+        margin: 2%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main__pagos {
+        margin: 2%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #pago-img-div {
+        width: 80%;
+    }
+
+    #pago-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* PRESUPUESTO */
+    #presup__main__txt {
+        padding-left: 5%;
+        grid-area: p_texto;
+        margin: 2%;
+        font-size: small;
+    }
+
+    /* INdEX */
+
+    .footer {
+        flex-basis: 0%;
+        justify-content: center;
+    }
+
+    #up-footer {
+        display: none;
+    }
+
+    .main__pagos {
+        margin: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* CONTACTO */
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* NOSOTROS */
+    #nosotros__rb {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "section_nosotros_grl section_nosotros_grl"
+            "nosotros__imglocal nosotros__imglocal";
+        align-items: center;
+    }
+
+    #section_nosotros_grl {
+        grid-area: section_nosotros_grl;
+        text-align: center;
+        margin: 10%;
+    }
+
+    #section1__nosotros h3 {
+        font-size: 450%;
+        font-weight: 800;
+    }
+
+    .nosotros__imglocal {
+        padding: 1%;
+        grid-area: nosotros__imglocal;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-basis: 0%;
+        justify-content: center;
+    }
+
+    #up-footer {
+        display: none;
+    }
+
+    /* NAV */
+    body {
+        grid-template-rows: 0.5fr 0.2fr 2fr 0.20fr;
+    }
+
+    /* HEADER */
+    .header__contacto {
+        justify-content: end;
+        margin-top: 1%;
+        flex-basis: 25%;
+        margin-right: 0%;
+        height: 100%;
+        font-size: small;
+        font-weight: 600;
+    }
+
+    .header__contacto__img {
+        width: 15%;
+        max-width: 80%
+    }
+
+    /* INDEX */
+    .main__pagos {
+        margin: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__marcas {
+        margin: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #body-index {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 0.33fr 0.16fr 1.6fr 0.20fr;
+    }
+
+    /* footer */
+    .footer {
+        flex-basis: 0%;
+        justify-content: center;
+        font-size: small;
+    }
+
+    /* PRESUPUETO */
+    #presup__main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "p_texto p_img"
+            "p_map p_map";
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #presup__main__img {
+        padding-left: 5%;
+        grid-area: p_img;
+        width: 70%;
+    }
+
+    #contenedor__mapa__presup {
+        height: 40%;
+        width: 40%;
+    }
+
+    /* UBICACION */
+    #mapa-google-chico {
+        display: block;
+    }
+
+    #mapa-google-grande {
+        display: none;
+    }
+
+    #mapa-google-extrachico {
+        display: none;
+    }
+
+    /* CONTACTO */
+    #formulario {
+        height: 90%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+    .header__contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+        /* bottom: 100%; */
+        /* margin-left: 80%; */
+        font-size: x-small;
+        font-weight: 600;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .header__logo {
+        display: flex;
+        flex-basis: 50%;
+        height: 60%;
+        padding: 1%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .header__contacto__img {
+        width: 8%;
+        max-width: 100%;
+    }
+
+    /* INDEX */
+    #main-inicio {
+        display: grid;
+        grid-template-rows: 0.6fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "portada portada"
+            "section-index-1 section-index-1"
+            "section-index-2 section-index-2";
+        text-align: center;
+    }
+
+    #body-index {
+        width: 100vw;
+        height: 130vh;
+        display: grid;
+        grid-template-rows: 0.33fr 0.135fr 2fr 0.20fr;
+    }
+
+    .main__marcas {
+        font-size: x-small;
+    }
+
+    .main__pagos {
+        font-size: small;
+    }
+
+    /* NOSOTROS */
+    .nosotros__imglocal {
+        height: 80%;
+    }
+
+    /* NAV */
+    body {
+        grid-template-rows: 0.5fr 0.18fr 2fr 0.20fr;
+    }
+
+    /* PRESUPUESTO */
+    #presup__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenedor__mapa__presup {
+        height: 100%;
+        width: 90%;
+    }
+
+    #presup__main__txt {
+        flex-basis: 40%;
+    }
+
+    #presup__main__map {
+        flex-basis: 60%;
+    }
+
+    #presup__main__img {
+        flex-basis: 20%;
+        padding-left: 5%;
+        grid-area: p_img;
+        width: 50%;
+
+    }
+
+    /* CONTACTO */
+    #formulario {
+        display: inline-block;
+        width: 20%;
+        height: 80%;
+        margin: 5%;
+        line-height: 200%;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+    .header__contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+        /* bottom: 100%; */
+        /* margin-left: 80%; */
+        font-size: x-small;
+        font-weight: 600;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .header__contacto__img {
+        width: 8%;
+        max-width: 100%;
+    }
+
+    /* NAVEGADOR */
+    nav {
+        font-size: x-small;
+    }
+
+    /* footer */
+    .footer {
+        flex-basis: 0%;
+        justify-content: center;
+        font-size: x-small;
+    }
+
+    /* NOSOTROS */
+    .nosotros__imglocal {
+        height: 60%;
+    }
+
+    /* PRESUPUESTO */
+    #presup__main__txt {
+        font-size: small;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    /* UBICACION */
+    #mapa-google-chico {
+        display: none;
+    }
+
+    #mapa-google-extrachico {
+        display: block;
+    }
+
+    #mapa-google-grande {
+        display: none;
+    }
+
+    /* CONTACTO */
+    #formulario {
+        display: inline-block;
+        width: 20%;
+        height: 80%;
+        margin: 5%;
+        line-height: 100%;
+        font-weight: 300;
+        font-size: xx-small;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .footer {
+        flex-basis: 0%;
+        justify-content: center;
+        font-size: xx-small;
+    }
+
+    /* NAVEGADOR */
+
+    nav {
+        font-size: xx-small;
+    }
+
+    body {
+        grid-template-rows: 0.5fr 0.11fr 2fr 0.20fr;
+    }
+
+    #section_nosotros_grl {
+        margin: 5%;
+    }
+
+    #section1__nosotros h3 {
+        font-size: 200%;
+        font-weight: 800;
+    }
+
+    #section1__nosotros h4 {
+        font-size: 90%;
+    }
+
+    .nosotros__imglocal {
+        padding: 1%;
+        width: 80%;
+        height: 80%;
+        justify-self: center;
+    }
+}

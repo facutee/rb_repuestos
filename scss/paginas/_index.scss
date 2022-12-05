@@ -1,0 +1,63 @@
+/* INDEX */
+#index {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#body-index {
+    width: 100vw;
+    height: 140vh;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-template-rows: 0.33fr 0.09fr 2fr 0.20fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+}
+
+#main-inicio {
+    display: grid;
+    grid-template-rows: 0.6fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "portada portada"
+        "section-index-1 section-index-2"
+        "section-index-1 section-index-2";
+    text-align: center;
+}
+
+#portada-local {
+    grid-area: portada;
+    width: 100%;
+    background-image: url(../assets/images/guarda-frente-local.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.main__marcas {
+    grid-area: section-index-1;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#marcas-img {
+    width: 80%;
+    img {
+        max-width: 100%;
+    }
+}
+
+.main__pagos {
+    grid-area: section-index-2;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

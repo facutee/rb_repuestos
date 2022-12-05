@@ -1,0 +1,87 @@
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #00A2E8;
+}
+.header__logo {
+    display: flex;
+    flex-basis: 50%;
+    height: 100%;
+    padding: 1%;
+    justify-content: end;
+}
+
+.header__logo h1:hover {
+    animation: wiggle 500ms infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translate(2px, 0);
+    }
+
+    50% {
+        transform: translate(-2px, 0);
+    }
+
+    100% {
+        transform: translate(2px, 0);
+    }
+}
+
+#rblogo {
+    max-height: 100%;
+}
+
+.header__contacto {
+    justify-content: end;
+    margin-top: 1%;
+    flex-basis: 20%;
+    margin-right: 5%;
+    height: 100%;
+    /* bottom: 100%; */
+    /* margin-left: 80%; */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    animation: vibrate-1 4s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+
+    5% {
+        transform: translate(-2px, 2px);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    15% {
+        transform: translate(2px, 2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    25% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.header__contacto__img {
+    width: 10%;
+    max-width: 100%
+}

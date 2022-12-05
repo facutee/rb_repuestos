@@ -1,0 +1,56 @@
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #0085E8;
+    opacity: 0.90;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer {
+    flex-basis: 70%;
+    h3 {
+        animation: jello-diagonal-1 2s infinite both;
+    }
+}
+
+@keyframes jello-diagonal-1 {
+    0% {
+        transform: skew(0deg 0deg);
+    }
+
+    30% {
+        transform: skew(6deg 6deg);
+    }
+
+    40% {
+        transform: skew(-6deg, -6deg);
+    }
+
+    50% {
+        -webkit-transform: skew(5deg, 5deg);
+        transform: skew(5deg, 5deg);
+    }
+
+    65% {
+        transform: skew(-2.5deg, -2.5deg);
+    }
+
+    75% {
+        transform: skew(2.5deg, 2.5deg);
+    }
+
+    90% {
+        transform: skew(0deg 0deg);
+    }
+
+    100% {
+        transform: skew(0deg 0deg);
+    }
+}
+
+#up-footer {
+    margin-left: 25%;
+    height: 90%;
+}

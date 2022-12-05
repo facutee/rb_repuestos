@@ -1,0 +1,47 @@
+/* PRESUPUESTO */
+#presup__main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "p_texto p_map p_map"
+        "p_img p_map p_map";
+    align-items: center;
+    justify-content: space-around;
+}
+
+#presup__main__txt {
+    padding-left: 5%;
+    grid-area: p_texto;
+    margin: 2%;
+}
+
+#presup__main__txt h3 {
+    font-weight: 800;
+}
+
+#presup__main__txt h4 {
+    line-height: 120%;
+    text-align: justify;
+}
+
+#presup__main__map {
+    grid-area: p_map;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 1%; */
+    /* margin: 2%; */
+}
+
+#presup__main__img {
+    padding-left: 5%;
+    grid-area: p_img;
+    width: 100%;
+
+}
+
+#contenedor__mapa__presup {
+    height: 60%;
+    width: 60%;
+}

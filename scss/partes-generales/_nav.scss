@@ -1,0 +1,53 @@
+nav {
+    margin: 0;
+    grid-area: nav;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #333;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: #333;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        li {
+            font-weight: 600;
+            color: white;
+            display: block;
+            padding: 0.5%;
+            flex-grow: 1;
+            text-align: center;
+            a {
+                color: white;
+                text-decoration: none;
+                padding: .5em 1em;
+            }
+        }
+    }
+}
+
+nav li a:hover {
+    background: tomato;
+    color: white;
+}
+
+#main-nav li:hover {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

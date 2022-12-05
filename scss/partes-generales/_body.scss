@@ -1,0 +1,13 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-template-rows: 0.5fr 0.15fr 2fr 0.20fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+}

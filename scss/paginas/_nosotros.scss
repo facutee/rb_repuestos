@@ -1,0 +1,35 @@
+
+#nosotros__rb {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "section_nosotros_grl nosotros__imglocal nosotros__imglocal"
+        "section_nosotros_grl nosotros__imglocal nosotros__imglocal";
+    align-items: center;
+}
+
+#section_nosotros_grl {
+    grid-area: section_nosotros_grl;
+    text-align: center;
+    margin: 2%;
+    margin-left: 12%;
+}
+
+#section1__nosotros h3 {
+    font-size: 450%;
+    font-weight: 800;
+}
+
+#section2__nosotros {
+    text-align: justify;
+    line-height: 120%;
+}
+
+.nosotros__imglocal {
+    padding: 3%;
+    grid-area: nosotros__imglocal;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
