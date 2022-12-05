@@ -1,42 +1,28 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Barra de navegación horizontal con listas y estilos CSS</title>
-
-<style type="text/css">
-#navegador ul{
-   list-style-type: none;
-   text-align: center;
-}
-#navegador li{
-   display: inline;
-   text-align: center;
-   margin: 0 10px 0 0;
-}
-#navegador li a {
-   padding: 2px 7px 2px 7px;
-   color: #666;
-   background-color: #eeeeee;
-   border: 1px solid #ccc;
-   text-decoration: none;
-}
-#navegador li a:hover{
-   background-color: #333333;
-   color: #ffffff;
-}
-   </style>
-</head>
-
-<body>
-
-
-<div id="navegador">
-<ul>
-<li><a href="#">Elemento 1</a></li>
-<li><a href="#">Elemento 2</a></li>
-<li><a href="#">Elemento 3</a></li>
-<li><a href="#">Elemento 4</a></li>
-</ul>
-</div>
-
-</body>
+  <head>
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="css/ej.css">
+  </head>
+  <body>
+    <h2>Contacto</h2>
+    <div class="container">
+      <form action="/form/submit" method="POST">
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="name" placeholder="Escriba su nombre">
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" name="surname" placeholder="Escriba su apellido">
+        <label for="lname">E-mail</label>
+        <input type="text" id="mail" name="e-mail" placeholder="Escriba su e-mail">
+        <label for="ci">¿Es usted mecanico?</label>
+        <select id="country" name="elija su opción">
+          <option value="si-m">Si</option>
+          <option value="no-m">No</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="escriba su mensaje" style="height:200px"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </body>
 </html>
