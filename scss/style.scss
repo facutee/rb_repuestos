@@ -54,6 +54,11 @@
     #pago-img {
         width: 100%;
     }
+        /* HEADER */
+        .header__contacto {
+            font-size: 1.3vw;
+            font-weight: 500;
+        }
 }
 
 @media screen and (max-width: 1024px) {
@@ -83,7 +88,11 @@
         justify-content: center;
     }
 
-    /* CONTACTO */
+         /* HEADER */
+         .header__contacto {
+            font-size: 1.6vw;
+            flex-basis: 25%;
+        }
 
 }
 
@@ -131,22 +140,21 @@
 
     /* NAV */
     body {
-        grid-template-rows: 0.5fr 0.2fr 2fr 0.20fr;
+        grid-template-rows: 0.5fr 0.25fr 2fr 0.20fr;
     }
 
     /* HEADER */
     .header__contacto {
         justify-content: end;
         margin-top: 1%;
-        flex-basis: 25%;
         margin-right: 0%;
         height: 100%;
-        font-size: small;
-        font-weight: 600;
+        flex-basis: 35%;
+        font-size: 2vw;
     }
 
     .header__contacto__img {
-        width: 15%;
+        width: 11%;
         max-width: 80%
     }
 
@@ -219,6 +227,7 @@
         margin-left: 15%;
     }
 }
+  
 
 @media screen and (max-width: 600px) {
 
@@ -284,7 +293,7 @@
 
     /* NAV */
     body {
-        grid-template-rows: 0.5fr 0.18fr 2fr 0.20fr;
+        grid-template-rows: 0.5fr 0.23fr 2fr 0.20fr;
     }
 
     /* PRESUPUESTO */
@@ -350,7 +359,9 @@
     nav {
         font-size: x-small;
     }
-
+    body {
+        grid-template-rows: 0.5fr 0.17fr 2fr 0.20fr;
+    }
     /* footer */
     .footer {
         flex-basis: 0%;
@@ -410,7 +421,7 @@
     }
 
     body {
-        grid-template-rows: 0.5fr 0.11fr 2fr 0.20fr;
+        grid-template-rows: 0.5fr 0.16fr 2fr 0.20fr;
     }
 
     #section_nosotros_grl {

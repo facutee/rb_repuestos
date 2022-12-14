@@ -227,12 +227,9 @@ input[type=text],
 select,
 textarea {
   width: 100%;
-  padding: 8px;
   border: 1px solid #eeeeee;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 8px;
-  margin-bottom: 16px;
   resize: vertical; }
 
 input[type=submit] {
@@ -249,7 +246,20 @@ input[type=submit]:hover {
 .container {
   border-radius: 8px;
   background-color: #e6e6e6;
-  padding: 15px; }
+  padding: 1%;
+  height: 90%;
+  width: 60%;
+  display: inline-block; }
+  .container form {
+    height: 100%; }
+    .container form label {
+      font-size: small;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+#main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /* PRESUPUESTO */
 #presup__main {
@@ -363,7 +373,11 @@ input[type=submit]:hover {
   #pago-img-div {
     width: 80%; }
   #pago-img {
-    width: 100%; } }
+    width: 100%; }
+  /* HEADER */
+  .header__contacto {
+    font-size: 1.3vw;
+    font-weight: 500; } }
 
 @media screen and (max-width: 1024px) {
   /* PRESUPUESTO */
@@ -382,7 +396,10 @@ input[type=submit]:hover {
     margin: 2%;
     align-items: center;
     justify-content: center; }
-  /* CONTACTO */ }
+  /* HEADER */
+  .header__contacto {
+    font-size: 1.6vw;
+    flex-basis: 25%; } }
 
 @media screen and (max-width: 768px) {
   /* NOSOTROS */
@@ -413,18 +430,17 @@ input[type=submit]:hover {
     display: none; }
   /* NAV */
   body {
-    grid-template-rows: 0.5fr 0.2fr 2fr 0.20fr; }
+    grid-template-rows: 0.5fr 0.25fr 2fr 0.20fr; }
   /* HEADER */
   .header__contacto {
     justify-content: end;
     margin-top: 1%;
-    flex-basis: 25%;
     margin-right: 0%;
     height: 100%;
-    font-size: small;
-    font-weight: 600; }
+    flex-basis: 35%;
+    font-size: 2vw; }
   .header__contacto__img {
-    width: 15%;
+    width: 11%;
     max-width: 80%; }
   /* INDEX */
   .main__pagos {
@@ -516,7 +532,7 @@ input[type=submit]:hover {
     height: 80%; }
   /* NAV */
   body {
-    grid-template-rows: 0.5fr 0.18fr 2fr 0.20fr; }
+    grid-template-rows: 0.5fr 0.23fr 2fr 0.20fr; }
   /* PRESUPUESTO */
   #presup__main {
     display: flex;
@@ -561,6 +577,8 @@ input[type=submit]:hover {
   /* NAVEGADOR */
   nav {
     font-size: x-small; }
+  body {
+    grid-template-rows: 0.5fr 0.17fr 2fr 0.20fr; }
   /* footer */
   .footer {
     flex-basis: 0%;
@@ -600,7 +618,7 @@ input[type=submit]:hover {
   nav {
     font-size: xx-small; }
   body {
-    grid-template-rows: 0.5fr 0.11fr 2fr 0.20fr; }
+    grid-template-rows: 0.5fr 0.16fr 2fr 0.20fr; }
   #section_nosotros_grl {
     margin: 5%; }
   #section1__nosotros h3 {
