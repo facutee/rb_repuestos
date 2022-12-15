@@ -11,7 +11,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   grid-template-rows: 0.5fr 0.15fr 2fr 0.20fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "main main main"
+ "footer footer footer"; }
 
 header {
   grid-area: header;
@@ -176,13 +179,18 @@ footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   grid-template-rows: 0.33fr 0.09fr 2fr 0.20fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "main main main"
+ "footer footer footer"; }
 
 #main-inicio {
   display: grid;
   grid-template-rows: 0.6fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "portada portada" "section-index-1 section-index-2" "section-index-1 section-index-2";
+  grid-template-areas: "portada portada"
+ "section-index-1 section-index-2"
+ "section-index-1 section-index-2";
   text-align: center; }
 
 #portada-local {
@@ -211,7 +219,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
 
 /* CONTACTO */
 /* #main-contacto {
@@ -266,7 +274,8 @@ input[type=submit]:hover {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "p_texto p_map p_map" "p_img p_map p_map";
+  grid-template-areas: "p_texto p_map p_map"
+ "p_img p_map p_map";
   align-items: center;
   justify-content: space-around; }
 
@@ -303,7 +312,8 @@ input[type=submit]:hover {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "section_nosotros_grl nosotros__imglocal nosotros__imglocal" "section_nosotros_grl nosotros__imglocal nosotros__imglocal";
+  grid-template-areas: "section_nosotros_grl nosotros__imglocal nosotros__imglocal"
+ "section_nosotros_grl nosotros__imglocal nosotros__imglocal";
   align-items: center; }
 
 #section_nosotros_grl {
@@ -407,7 +417,8 @@ input[type=submit]:hover {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "section_nosotros_grl section_nosotros_grl" "nosotros__imglocal nosotros__imglocal";
+    grid-template-areas: "section_nosotros_grl section_nosotros_grl"
+ "nosotros__imglocal nosotros__imglocal";
     align-items: center; }
   #section_nosotros_grl {
     grid-area: section_nosotros_grl;
@@ -466,7 +477,8 @@ input[type=submit]:hover {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "p_texto p_img" "p_map p_map";
+    grid-template-areas: "p_texto p_img"
+ "p_map p_map";
     align-items: center;
     justify-content: space-around; }
   #presup__main__img {
@@ -516,7 +528,9 @@ input[type=submit]:hover {
     display: grid;
     grid-template-rows: 0.6fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "portada portada" "section-index-1 section-index-1" "section-index-2 section-index-2";
+    grid-template-areas: "portada portada"
+ "section-index-1 section-index-1"
+ "section-index-2 section-index-2";
     text-align: center; }
   #body-index {
     width: 100vw;
