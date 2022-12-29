@@ -48,29 +48,27 @@ header {
   justify-content: end;
   margin-top: 1%;
   flex-basis: 20%;
-  margin-right: 5%;
+  margin-right: 4%;
+  padding-left: 1%;
   height: 100%;
   /* bottom: 100%; */
   /* margin-left: 80%; */
   font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  animation: vibrate-1 4s linear infinite both; }
+  font-weight: 600; }
+  .header__contacto div a {
+    text-decoration: none; }
 
-@keyframes vibrate-1 {
+.header__contacto div:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear; }
+
+@keyframes pulse-ico {
   0% {
-    transform: translate(0); }
-  5% {
-    transform: translate(-2px, 2px); }
-  10% {
-    transform: translate(-2px, -2px); }
-  15% {
-    transform: translate(2px, 2px); }
-  20% {
-    transform: translate(2px, -2px); }
-  25% {
-    transform: translate(0); }
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
   100% {
-    transform: translate(0); } }
+    transform: scale(1); } }
 
 .header__contacto__img {
   width: 10%;
@@ -134,35 +132,7 @@ footer {
   background-color: #0085E8;
   opacity: 0.90;
   align-items: center;
-  justify-content: flex-end; }
-
-.footer {
-  flex-basis: 70%; }
-  .footer h3 {
-    animation: jello-diagonal-1 2s infinite both; }
-
-@keyframes jello-diagonal-1 {
-  0% {
-    transform: skew(0deg 0deg); }
-  30% {
-    transform: skew(6deg 6deg); }
-  40% {
-    transform: skew(-6deg, -6deg); }
-  50% {
-    -webkit-transform: skew(5deg, 5deg);
-    transform: skew(5deg, 5deg); }
-  65% {
-    transform: skew(-2.5deg, -2.5deg); }
-  75% {
-    transform: skew(2.5deg, 2.5deg); }
-  90% {
-    transform: skew(0deg 0deg); }
-  100% {
-    transform: skew(0deg 0deg); } }
-
-#up-footer {
-  margin-left: 25%;
-  height: 90%; }
+  justify-content: center; }
 
 /* INDEX */
 #index {
