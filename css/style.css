@@ -78,7 +78,7 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: row;
-  background-image: url(../assets/images/fondo-celeste.jpg);
+  background-image: url(../assets/images/fondo-celeste.webp);
   background-position: center;
   background-size: cover; }
 
@@ -109,7 +109,7 @@ nav {
         padding: .5em 1em; }
 
 nav li a:hover {
-  background: tomato;
+  background: #0065e8;
   color: white; }
 
 #main-nav li:hover {
@@ -158,7 +158,7 @@ footer {
 #portada-local {
   grid-area: portada;
   width: 100%;
-  background-image: url(../assets/images/guarda-frente-local.png);
+  background-image: url(../assets/images/guarda-frente-local.webp);
   background-position: center;
   background-size: cover; }
 
